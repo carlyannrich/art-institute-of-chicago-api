@@ -1,0 +1,36 @@
+{
+	"name": "art-institute-of-chicago-api",
+	"version": "1.0.0",
+	"description": "Using the AIC's public API",
+	"main": "index.ts",
+	"scripts": {
+		"start": "ts-node index.ts",
+		"client": "npm start --prefix client",
+		"dev": "concurrently \"npm run start\" \"npm run client\"",
+		"build": "npm run build --prefix client"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/carlyannrich/art-institute-of-chicago-api.git"
+	},
+	"author": "",
+	"bugs": {
+		"url": "https://github.com/carlyannrich/art-institute-of-chicago-api/issues"
+	},
+	"homepage": "https://github.com/carlyannrich/art-institute-of-chicago-api#readme",
+	"dependencies": {
+		"cors": "^2.8.5",
+		"cross-fetch": "^3.1.5",
+		"dotenv": "^16.0.0",
+		"express": "^4.18.1",
+		"express-validator": "^6.14.0"
+	},
+	"devDependencies": {
+		"@types/cors": "^2.8.12",
+		"@types/express": "^4.17.13",
+		"@types/node": "^17.0.31",
+		"eslint": "^8.14.0",
+		"ts-node": "^10.7.0",
+		"typescript": "^4.6.4"
+	}
+}
